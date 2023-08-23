@@ -42,7 +42,7 @@ runApp(
                 ]
               ),
               child: Center(
-                  child: Text('this is container that contains some text')
+                  child: Text('this is container that contains some text in two lines')
               ),
               ),
 
