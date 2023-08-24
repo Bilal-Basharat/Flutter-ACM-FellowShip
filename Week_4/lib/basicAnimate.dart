@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navigation_routing_animation/heroAnimation.dart';
 import 'package:navigation_routing_animation/utilities/routesName.dart';
 
 class BasicAnimation extends StatefulWidget {
@@ -67,14 +68,24 @@ class _BasicAnimationState extends State<BasicAnimation> {
                 },
                 child: Container(
                   width: 180,
+                  height: 100,
                   margin: EdgeInsets.symmetric(vertical: 20),
                   padding: EdgeInsets.symmetric(horizontal: 20),
                   color: Colors.white,
-                  child: const Text('Tween Animation Screen',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: Colors.red) ,),
-                ),
+                  child: Text('go to Tween Animation'),
               ),
-
+              ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context,
+              MaterialPageRoute(builder: (context) => HeroAnimation())
+              );
+            },
+              child: Hero(
+                tag: 'background',
+                child: Image.asset('assets/images/flutter_logo.png', width: 100, height: 100,),
+              )
+          )
 
             ],
           ),
