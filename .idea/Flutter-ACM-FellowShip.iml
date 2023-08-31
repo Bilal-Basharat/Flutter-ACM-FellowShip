@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/Week_5/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Week_5/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Week_5/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter_Dice_Game/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter_Dice_Game/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter_Dice_Game/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Week_4/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Week_4/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Week_4/build" />
+      <excludeFolder url="file://$MODULE_DIR$/week_3/build" />
+      <excludeFolder url="file://$MODULE_DIR$/week_3/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/week_3/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/mini_project_micard/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/mini_project_micard/build" />
+      <excludeFolder url="file://$MODULE_DIR$/mini_project_micard/.pub" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
