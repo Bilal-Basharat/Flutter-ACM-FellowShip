@@ -1,4 +1,5 @@
 import 'package:api_integration/ComplexAPIExample.dart';
+import 'package:api_integration/Models/UploadImageScreen.dart';
 import 'package:api_integration/SignUp.dart';
 import 'Photos_example.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: SignUpScreen(),
+      home: UploadImageScreen(),
     );
   }
 }
