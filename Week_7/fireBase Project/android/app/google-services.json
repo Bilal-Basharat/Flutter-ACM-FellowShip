@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "786411629143",
+    "project_id": "fir-project-c22fa",
+    "storage_bucket": "fir-project-c22fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786411629143:android:0d24f204a33cc39c3d9112",
+        "android_client_info": {
+          "package_name": "com.bilal.firebase_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzvfbEdJwawh_4d15glixFKIYCAnNnas0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
