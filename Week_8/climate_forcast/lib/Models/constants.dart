@@ -6,19 +6,36 @@ class Constants{
   final Color secondaryColor = const Color(0xff90B2F8);
 }
 
-class City{
-  bool isSelected;
-  final String city;
-  final String country;
-  final bool isDefault;
+const kTempTextStyle = TextStyle(
+  fontFamily: 'Spartan MB',
+  fontSize: 100.0,
+);
 
-  City({
-   required this.isSelected,
-   required this.city,
-   required this.country,
-   required this.isDefault
-});
+const kMessageTextStyle = TextStyle(
+  fontFamily: 'Spartan MB',
+  fontSize: 60.0,
+);
 
-  //list of cities
+const kButtonTextStyle = TextStyle(
+  fontSize: 30.0,
+  fontFamily: 'Spartan MB',
+);
 
-}
+const kConditionTextStyle = TextStyle(
+  fontSize: 100.0,
+);
+
+var textFieldInputDecation = InputDecoration(
+filled: true,
+fillColor: Colors.white,
+icon: Icon(
+Icons.location_city,
+  color: Colors.white,
+),
+  hintText: 'Enter City Name',
+hintStyle: TextStyle(color: Colors.grey),
+border: OutlineInputBorder(
+borderRadius: BorderRadius.circular(10),
+borderSide: BorderSide.none,
+),
+);
