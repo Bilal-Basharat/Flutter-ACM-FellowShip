@@ -45,7 +45,6 @@ borderSide: BorderSide.none,
 
 //list of cities to show their weather
 final List<String> cities = [
-'New York',
   'New York',
   'Tokyo',
   'Delhi',
