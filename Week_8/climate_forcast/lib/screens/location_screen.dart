@@ -52,69 +52,81 @@ class _LocationScreenState extends State<LocationScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.white, Colors.cyanAccent.shade100 , Colors.cyanAccent.shade200],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            stops: [0.4, 0.7, 1.0],
+
+          ),
+        ),
         constraints: BoxConstraints.expand(),
         child: SafeArea(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  TextButton(
-                    onPressed: () async {
-                      var weatherDataUpdated = await WeatherModel().getWeatherLocation();
-                      updateWeather(weatherDataUpdated);
-                      },
-                    child: Icon(
-                      Icons.near_me,
-                      size: 50.0,
-                    ),
-                  ),
-                  TextButton(
-                    onPressed: () async {
-                      var updatedCityName = await Navigator.push(
-                          context, MaterialPageRoute(
-                          builder: (context)
-                      {
-                        return CityWeather();
-                      }));
-                      if(updatedCityName != null){
-                        var cityWeatherData = await WeatherModel().getWeatherByCityName(updatedCityName);
-                        updateWeather(cityWeatherData);
-                      }
-                    },
-                    child: Icon(
-                      Icons.location_city,
-                      size: 50.0,
-                    ),
-                  ),
-                ],
-              ),
-              Padding(
-                padding: EdgeInsets.only(left: 15.0),
-                child: Row(
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Text(
-                      intTemp.toString(),
-                      style: kTempTextStyle,
+                    TextButton(
+                      onPressed: () async {
+                        var weatherDataUpdated = await WeatherModel().getWeatherLocation();
+                        updateWeather(weatherDataUpdated);
+                        },
+                      child: Icon(
+                        Icons.near_me,
+                        size: 50.0,
+                      ),
                     ),
-                    Text(
-                      weatherIcon,
-                      style: kConditionTextStyle,
+                    TextButton(
+                      onPressed: () async {
+                        var updatedCityName = await Navigator.push(
+                            context, MaterialPageRoute(
+                            builder: (context)
+                        {
+                          return CityWeather();
+                        }));
+                        if(updatedCityName != null){
+                          var cityWeatherData = await WeatherModel().getWeatherByCityName(updatedCityName);
+                          updateWeather(cityWeatherData);
+                        }
+                      },
+                      child: Icon(
+                        Icons.location_city,
+                        size: 50.0,
+                      ),
                     ),
                   ],
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(right: 15.0),
-                child: Text(
-                  "$weatherMessage in $cityName",
-                  textAlign: TextAlign.right,
-                  style: kMessageTextStyle,
+                Padding(
+                  padding: EdgeInsets.only(left: 15.0),
+                  child: Column(
+                    children: <Widget>[
+                      Text(
+                        intTemp.toString() + '\u00B0C ',
+                        style: kTempTextStyle,
+                      ),
+                      Text(
+                        weatherIcon,
+                        style: kConditionTextStyle,
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-            ],
+                Padding(
+                  padding: EdgeInsets.only(right: 15.0),
+                  child: Text(
+                    "$weatherMessage in $cityName",
+                    textAlign: TextAlign.right,
+                    style: kMessageTextStyle,
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),

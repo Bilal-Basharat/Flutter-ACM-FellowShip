@@ -6,9 +6,12 @@ class Constants{
   final Color secondaryColor = const Color(0xff90B2F8);
 }
 
-const kTempTextStyle = TextStyle(
-  fontFamily: 'Spartan MB',
+const kTempTextStyle =
+TextStyle(
+  fontFamily: 'RobotoMono',
   fontSize: 100.0,
+  color: Color(0xff13C7D8),
+  fontWeight: FontWeight.w100,
 );
 
 const kMessageTextStyle = TextStyle(
@@ -39,3 +42,35 @@ borderRadius: BorderRadius.circular(10),
 borderSide: BorderSide.none,
 ),
 );
+
+//list of cities to show their weather
+final List<String> cities = [
+'New York',
+  'New York',
+  'Tokyo',
+  'Delhi',
+  'Beijing',
+  'Paris',
+  'Rome',
+  'Lagos',
+  'Amsterdam',
+  'Barcelona',
+  'Vienna',
+  'Berlin',
+  'Toronto',
+  'Brussels',
+  'Nairobi',
+  'Karachi',
+  'Lahore',
+  'Islamabad',
+  'Multan',
+  'Hyderabad',
+  'Bahawalpur',
+  'Quetta',
+  'Jacobabad',
+'Los Angeles',
+'Chicago',
+'Houston',
+'Miami',
+// Add more cities as needed
+];
