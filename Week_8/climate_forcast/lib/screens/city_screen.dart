@@ -19,6 +19,7 @@ class _CityWeatherState extends State<CityWeather> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blue,
         title: const Text('Climate Forecast'),
         centerTitle: true,
       ),
@@ -27,13 +28,13 @@ class _CityWeatherState extends State<CityWeather> {
         // width: double.infinity,
         // height: MediaQuery.of(context).size.height * 0.7,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            SizedBox(height: 25),
             const Padding(
                 padding: EdgeInsets.all(20),
-            child: Text('Select a city from the list', style:
-            TextStyle(color: Colors.blue, fontSize: 20,fontWeight: FontWeight.bold),)
+            child: Text('Select City from the list', style:
+            TextStyle(color: Colors.blue, fontSize: 20 ),)
               ,),
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 20),
@@ -53,7 +54,7 @@ class _CityWeatherState extends State<CityWeather> {
                 searchInputDecoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(
-                      color: Colors.blueGrey.shade800,
+                      color: Colors.blueGrey.shade200,
                       width: 1,
                     ),
                     borderRadius: BorderRadius.circular(10),
@@ -90,17 +91,7 @@ class _CityWeatherState extends State<CityWeather> {
                 },
               ),
             ),
-            // SizedBox(height: 20),
-            // Container(
-            //   width: 200,
-            //   height: 50,
-            //   alignment: Alignment.center,
-            //   decoration: BoxDecoration(
-            //   color: Colors.blue,
-            //
-            //   ),
-            //   child: Text('The city name is $cityName'),
-            // )
+
           ],
         ),
       ),

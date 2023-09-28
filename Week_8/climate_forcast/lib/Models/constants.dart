@@ -8,11 +8,12 @@ class Constants{
 
 const kTempTextStyle =
 TextStyle(
-  fontFamily: 'RobotoMono',
-  fontSize: 100.0,
+  fontFamily: 'Poppins',
+  fontSize: 75.0,
   color: Color(0xff13C7D8),
   fontWeight: FontWeight.w100,
 );
+
 
 const kMessageTextStyle = TextStyle(
   fontFamily: 'Spartan MB',
@@ -25,7 +26,12 @@ const kButtonTextStyle = TextStyle(
 );
 
 const kConditionTextStyle = TextStyle(
-  fontSize: 100.0,
+  fontSize: 70.0,
+);
+
+const iconsColorStyle = TextStyle(
+  color: Colors.blue,
+  fontSize: 16,
 );
 
 var textFieldInputDecation = InputDecoration(
@@ -47,6 +53,10 @@ borderSide: BorderSide.none,
 final List<String> cities = [
   'New York',
   'Tokyo',
+  'London',
+  'Instanbul',
+  'California',
+  'Washington',
   'Delhi',
   'Beijing',
   'Paris',
@@ -65,6 +75,10 @@ final List<String> cities = [
   'Multan',
   'Hyderabad',
   'Bahawalpur',
+  'Gujranwala',
+  'Gujrat',
+  'Sukkur',
+  'Rawal Pindi',
   'Quetta',
   'Jacobabad',
 'Los Angeles',
